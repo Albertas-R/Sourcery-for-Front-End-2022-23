@@ -1,13 +1,11 @@
 import { lazy } from 'react';
 
-const Home = lazy(() => import('../components/App/pages/Home'));
-const Developers = lazy(() =>
-  import('../components/App/pages/academy/Developers')
-);
-const Testers = lazy(() => import('../components/App/pages/academy/Testers'));
-const FrontEnd = lazy(() => import('../components/App/pages/academy/FrontEnd'));
-const Register = lazy(() => import('../components/App/pages/Register'));
-const NotFound = lazy(() => import('../components/App/pages/NotFound'));
+const Home = lazy(() => import('../pages/Home'));
+const Developers = lazy(() => import('../pages/academy/Developers'));
+const Testers = lazy(() => import('../pages/academy/Testers'));
+const FrontEnd = lazy(() => import('../pages/academy/FrontEnd'));
+const Register = lazy(() => import('../pages/Register'));
+const NotFound = lazy(() => import('../pages/NotFound'));
 
 export const routes = {
   home: '/',
