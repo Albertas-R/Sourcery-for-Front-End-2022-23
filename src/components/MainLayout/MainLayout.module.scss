@@ -1,0 +1,17 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+
+  &__main {
+    display: flex;
+    flex: 1;
+    padding: var(--spacer-xxl) var(--spacer-4xl);
+  }
+
+  &__header {
+    position: sticky;
+    top: 0;
+  }
+}

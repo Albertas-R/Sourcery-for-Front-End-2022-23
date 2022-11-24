@@ -1,6 +1,7 @@
 import React, { Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { routeConfig } from './routeConfig';
+import MainLayout from '../components/MainLayout/';
 
 export const RouteManager = React.memo(() => {
   return (
@@ -13,7 +14,9 @@ export const RouteManager = React.memo(() => {
             path={path}
             element={
               <Suspense fallback={<>Loading...</>}>
-                <Component />
+                <MainLayout>
+                  <Component />
+                </MainLayout>
               </Suspense>
             }
           ></Route>
