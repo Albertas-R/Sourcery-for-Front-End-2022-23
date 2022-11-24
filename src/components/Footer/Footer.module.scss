@@ -17,12 +17,11 @@
 
 .icon-eclipse {
   align-items: center;
-  background: var(--color-light-purple-400);
   border-radius: var(--border-radius-normal);
   display: flex;
-  height: var(--spacer-5xl);
+  height: toRem(40);
   justify-content: center;
-  width: var(--spacer-5xl);
+  width: toRem(40);
 }
 
 .text {
@@ -33,8 +32,8 @@
 }
 
 .image {
-  height: var(--spacer-5xl);
-  width: var(--spacer-5xl);
+  height: toRem(40);
+  width: toRem(40);
 }
 
 a {

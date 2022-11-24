@@ -28,8 +28,16 @@
   /* Shadows */
   --shadow: hsl(270, 11%, 96%);
 
+  /* Border */
+  --border-width-s: 0.1rem;
+  --border-width-m: 0.2rem;
+  --border-width: var(--border-width-m); /* alias for --border-width-m */
+
   /* Border radius */
-  --border-radius-normal: 4.8rem;
+  --border-radius-xs: 0.8rem;
+  --border-radius-s: 2.4rem;
+  --border-radius-m: 4.8rem;
+  --border-radius: var(--border-radius-m); /* alias for --border-radius-m */
 
   /* Typography */
   --font-family-base: 'Raleway', sans-serif;

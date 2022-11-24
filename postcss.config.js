@@ -6,7 +6,7 @@ module.exports = (context) => ({
     'postcss-preset-env': {
       stage: 0,
       preserve: true,
-      importFrom: './src/css/variables.scss',
+      importFrom: './src/sass/utilities/variables.scss',
       autoprefixer: {
         grid: false,
       },

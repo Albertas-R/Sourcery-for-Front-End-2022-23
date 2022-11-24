@@ -13,8 +13,8 @@
     text-decoration: none;
 
     .image {
-      height: var(--spacer-5xl);
-      width: var(--spacer-5xl);
+      height: toRem(40);
+      width: toRem(40);
     }
 
     .brand-name {
@@ -37,9 +37,8 @@
     }
 
     .icon {
-      height: var(--spacer-s);
-      position: relative;
-      width: var(--spacer-m);
+      height: toRem(8);
+      width: toRem(16);
     }
   }
 }

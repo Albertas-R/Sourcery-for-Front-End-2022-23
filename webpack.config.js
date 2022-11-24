@@ -25,6 +25,9 @@ const config = {
     port: 9000, // Specify a port number to listen for requests on
     historyApiFallback: true, // When using the HTML5 History API, the index.html page will likely have to be served in place of any 404 responses.
     hot: true, // EnableS webpack's Hot Module Replacement feature
+    client: {
+      overlay: false,
+    },
     devMiddleware: {
       publicPath: '/', // The bundled files will be available in the browser under this path
     },

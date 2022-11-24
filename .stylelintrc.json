@@ -14,46 +14,30 @@
       [
         "/color/",
         {
-          "ignoreValues": [
-            "transparent",
-            "inherit",
-            "currentColor"
-          ]
+          "ignoreValues": ["transparent", "inherit", "currentColor"]
         }
       ]
     ],
     "block-closing-brace-newline-after": [
       "always",
       {
-        "ignoreAtRules": [
-          "if",
-          "else"
-        ]
+        "ignoreAtRules": ["if", "else"]
       }
     ],
     "selector-max-id": 0,
     "no-descending-specificity": [
       true,
       {
-        "ignore": [
-          "selectors-within-list"
-        ]
+        "ignore": ["selectors-within-list"]
       }
     ],
-    "order/order": [
-      "custom-properties",
-      "declarations"
-    ],
+    "order/order": ["custom-properties", "declarations"],
     "order/properties-alphabetical-order": true,
     "max-nesting-depth": 3,
     "property-no-unknown": [
       true,
       {
-        "ignoreProperties": [
-          "composes",
-          "compose-with",
-          "font-range"
-        ]
+        "ignoreProperties": ["composes", "compose-with", "font-range"]
       }
     ],
     "selector-pseudo-class-no-unknown": [
@@ -71,10 +55,22 @@
     "selector-no-qualifying-type": [
       true,
       {
-        "ignore": [
-          "attribute",
-          "class"
-        ]
+        "ignore": ["attribute", "class"]
+      }
+    ],
+    "scss/at-function-pattern": "^[a-z][a-zA-Z0-9]+$",
+    "scss/dollar-variable-pattern": "^[a-z][a-zA-Z0-9]+$",
+    "function-name-case": [
+      "lower",
+      {
+        "ignoreFunctions": ["/^[a-z][a-zA-Z0-9]+$/"]
+      }
+    ],
+    "selector-class-pattern": [
+      "^[a-z]([a-z0-9-]+)?(__([a-z0-9]+-?)+)?(--([a-z0-9]+-?)+){0,2}$",
+      {
+        "resolveNestedSelectors": true,
+        "message": "Class names should match the hyphenated BEM naming convention"
       }
     ]
   }
