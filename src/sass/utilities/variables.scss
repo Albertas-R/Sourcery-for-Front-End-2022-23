@@ -79,3 +79,11 @@
   /* Z-indexes */
   --z-header: 10;
 }
+
+:root[data-theme='blue'] {
+  --primary-color: var(--color-blue-400);
+}
+
+:root[data-theme='red'] {
+  --primary-color: var(--color-red-100);
+}

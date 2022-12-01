@@ -3,10 +3,14 @@ import PromoSection from './PromoSection';
 import AcademiesSection from './AcademiesSection';
 
 const Home = () => {
-  return <>
-    <PromoSection />
-    <AcademiesSection />
-  </>
-}
+  document.documentElement.setAttribute('data-theme', 'blue');
+
+  return (
+    <>
+      <PromoSection />
+      <AcademiesSection />
+    </>
+  );
+};
 
 export default Home;
