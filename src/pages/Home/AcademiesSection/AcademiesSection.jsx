@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import classNames from 'classnames/bind';
 import backgroundParticles from '~/assets/images/Background_particles_Academies.svg?url';
 import ArrowButton from '~/assets/icons/Icon_arrow_down_circle.svg';
@@ -6,10 +7,10 @@ import styles from './AcademiesSection.module.scss';
 
 const cn = classNames.bind(styles);
 
-const AcademiesSection = () => {
+const AcademiesSection = ({ theme = 'violetTheme' }) => {
   return (
     <section
-      className={cn('academies-section', 'redTheme')}
+      className={cn('academies-section', `${theme}`)}
       style={{ backgroundImage: `url(${backgroundParticles})` }}
     >
       <h2 className={cn('academies-section__heading')}>Academies</h2>
@@ -29,4 +30,9 @@ const AcademiesSection = () => {
     </section>
   );
 };
+
+AcademiesSection.propTypes = {
+  theme: PropTypes.string,
+};
+
 export default AcademiesSection;

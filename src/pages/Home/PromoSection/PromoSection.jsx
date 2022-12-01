@@ -1,13 +1,14 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import classNames from 'classnames/bind';
 import Image_Promo from '~/assets/images/Image_Promo.svg';
 import styles from './PromoSection.module';
 
 const cn = classNames.bind(styles);
 
-const PromoSection = () => {
+const PromoSection = ({ theme = 'violetTheme' }) => {
   return (
-    <section className={cn('promo-section', 'redTheme')}>
+    <section className={cn('promo-section', `${theme}`)}>
       <div className={cn('section-text')}>
         <h1 className={cn('section-text__heading')}>
           Sourcery <br />
@@ -27,4 +28,9 @@ const PromoSection = () => {
     </section>
   );
 };
+
+PromoSection.propTypes = {
+  theme: PropTypes.string,
+};
+
 export default PromoSection;
