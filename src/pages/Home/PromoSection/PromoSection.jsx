@@ -7,7 +7,7 @@ const cn = classNames.bind(styles);
 
 const PromoSection = () => {
   return (
-    <section className={cn('promo-section', 'red')}>
+    <section className={cn('promo-section', 'redTheme')}>
       <div className={cn('section-text')}>
         <h1 className={cn('section-text__heading')}>
           Sourcery <br />
