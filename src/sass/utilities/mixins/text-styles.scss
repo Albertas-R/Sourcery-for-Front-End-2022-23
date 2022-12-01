@@ -1,5 +1,8 @@
 @mixin h1-h2 {
-  color: var(--color-purple-400);
+  @include theme() {
+    color: themeGet('color');
+  }
+  // color: var(--color-purple-400);
   font-family: var(--font-family-headline);
   font-size: var(--font-size-xxl);
   font-weight: var(--font-weight-bold);

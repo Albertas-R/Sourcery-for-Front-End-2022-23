@@ -1,3 +1,22 @@
+$themes: (
+  violet: (
+    'color': var(--color-purple-400),
+    'button-color': var(--color-light-purple-400),
+  ),
+  blue: (
+    'color': var(--color-blue-400),
+    'button-color': var(--color-blue-200),
+  ),
+  green: (
+    'color': var(--color-green-400),
+    'button-color': var(--color-green-200),
+  ),
+  red: (
+    'color': var(--color-red-400),
+    'button-color': var(--color-red-200),
+  ),
+);
+
 :root {
   /* Colors */
   --color-purple-400: hsl(245, 46%, 39%);

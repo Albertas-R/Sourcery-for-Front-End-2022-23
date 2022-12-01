@@ -9,7 +9,7 @@ const cn = classNames.bind(styles);
 const AcademiesSection = () => {
   return (
     <section
-      className={cn('academies-section')}
+      className={cn('academies-section', 'red')}
       style={{ backgroundImage: `url(${backgroundParticles})` }}
     >
       <h2 className={cn('academies-section__heading')}>Academies</h2>
