@@ -6,7 +6,7 @@ import styles from './PromoSection.module';
 
 const cn = classNames.bind(styles);
 
-const PromoSection = ({ theme = 'violetTheme' }) => {
+const PromoSection = ({ theme = 'violet-theme' }) => {
   return (
     <section className={cn('promo-section', `${theme}`)}>
       <div className={cn('section-text')}>

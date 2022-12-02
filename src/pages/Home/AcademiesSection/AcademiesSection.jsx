@@ -7,7 +7,7 @@ import styles from './AcademiesSection.module.scss';
 
 const cn = classNames.bind(styles);
 
-const AcademiesSection = ({ theme = 'violetTheme' }) => {
+const AcademiesSection = ({ theme = 'violet-theme' }) => {
   return (
     <section
       className={cn('academies-section', `${theme}`)}

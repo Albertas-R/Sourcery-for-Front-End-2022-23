@@ -3,19 +3,13 @@ import PropTypes from 'prop-types';
 import PromoSection from './PromoSection';
 import AcademiesSection from './AcademiesSection';
 
-// $themes:
-//   'violetTheme'
-//   'blueTheme'
-//   'greenTheme'
-//   'redTheme'
-
 const Home = () => {
   return (
     <>
       <PromoSection />
-      <PromoSection theme={'redTheme'} />
+      <PromoSection theme={'red-theme'} />
       <AcademiesSection />
-      <AcademiesSection theme={'greenTheme'} />
+      <AcademiesSection theme={'green-theme'} />
     </>
   );
 };
